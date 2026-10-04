@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Internship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add New Internship</h2>
+        <form action="save_internship.php" method="POST">
+
+
+    <div class="input-group">
+        <label>Company Name</label>
+        <input type="text" name="company" placeholder="e.g. Google" required>
+    </div>
+
+    <div class="input-group">
+        <label>Job Position</label>
+        <input type="text" name="position" placeholder="e.g. Web Intern" required>
+    </div>
+
+    <div class="input-group">
+        <label>Status</label>
+        <select name="status">
+            <option>Applied</option>
+            <option>Interviewing</option>
+            <option>Offer</option>
+            <option>Rejected</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn">Add Application</button>
+
+        </form>
+    </div>
+</body>
+</html>
